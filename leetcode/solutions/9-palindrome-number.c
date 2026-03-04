@@ -34,7 +34,7 @@ bool isPalindrome(int x) {
 
     // Calculate how many digits by checking the biggest power of 10 it can be
     // divided to before resulting in 0
-    int divider = 10, digit_count = 1;
+    long divider = 10, digit_count = 1;
     while (x / divider != 0) {
         digit_count++;
         divider *= 10;
