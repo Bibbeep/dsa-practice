@@ -16,12 +16,7 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
     }
 
     for (auto it : dict) {
-        vector<string> grp;
-        for (auto s : it.second) {
-            grp.push_back(s);
-        }
-
-        ans.push_back(grp);
+        ans.push_back(it.second);
     }
 
     return ans;
